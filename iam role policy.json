@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws lambda arn
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "textract:DetectDocumentText"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "comprehend:BatchDetectDominantLanguage",
+                "comprehend:ContainsPiiEntities"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
